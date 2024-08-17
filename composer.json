@@ -1,0 +1,27 @@
+{
+    "name": "paramon/example-client",
+    "autoload": {
+        "psr-4": {
+            "Paramon\\ExampleClient\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "src/Test/"
+        ]
+    },
+    "require": {
+        "php": "^8.0",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.9",
+        "phpunit/phpunit": "^10.1",
+        "squizlabs/php_codesniffer": "^3.9"
+    },
+    "scripts": {
+        "test": [
+          "phpcs --encoding=utf-8",
+          "phpunit"
+        ]
+    }
+}
